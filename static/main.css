@@ -1,1 +1,13 @@
+.site-title {
+    text-decoration: none;
+    color: black;
+}
 
+.site-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.site-title h1 {
+    margin: 0;
+}
