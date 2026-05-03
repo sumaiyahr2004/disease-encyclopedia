@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h3>Showing Results for "{{ query }}"</h3>
+
+{% if query == "" %}
+    <p>Please enter a valid search term.</p>
+
+{% elif results|length == 0 %}
+    <p>No results found</p>
+
+{% else %}
+    <ul>
+        {% for item in results %}
+            <li>
+                <a href="/view/{{ item.id }}">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}

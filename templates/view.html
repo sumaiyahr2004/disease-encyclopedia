@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ item.title }}</h2>
+
+<p><strong>Year Identified:</strong> {{ item.year_identified }}</p>
+<p><strong>Prevalence (millions):</strong> {{ item.prevalence_millions 
+}}</p>
+
+<p>{{ item.description }}</p>
+
+<p>
+    <a href="{{ item.media_link }}" target="_blank">
+        Watch Educational Video
+    </a>
+</p>
+
+<h4>Symptoms</h4>
+<ul>
+    {% for symptom in item.symptoms %}
+        <li>{{ symptom }}</li>
+    {% endfor %}
+</ul>
+
+<h4>Treatments</h4>
+<ul>
+    {% for treatment in item.treatments %}
+        <li>{{ treatment }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
