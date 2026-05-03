@@ -1,4 +1,4 @@
-# disease-encyclopedia
+# Disease Encyclopedia 
 
 This project entails a searchable web encyclopedia for chronic and infectious diseases. Browse conditions, search by name, and view detailed information including symptoms, treatments, and prevalence data. Each disease page also links to avideo  resource for further learning.
 
